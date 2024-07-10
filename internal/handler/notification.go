@@ -99,13 +99,13 @@ func validateCreateNotificationRequest(r *http.Request) (*services.NotificationR
 	}
 
 	isValidType := request.Type.IsValid()
-	if isValidType {
-		return nil, ErrInvalidNotificationType
+	if !isValidType {
+		return nil, ErrInvalidCardType
 	}
 
 	isValidCoin := request.Coin.IsValid()
-	if isValidCoin {
-		return nil, ErrInvalidNotificationType
+	if !isValidCoin {
+		return nil, ErrInvalidCoinType
 	}
 
 	for i, e := range request.Channels {
