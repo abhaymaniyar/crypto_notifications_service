@@ -43,7 +43,7 @@ A step by step series of examples that tell you how to get a development environ
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/abhaymaniyar/card_service.git
+git clone https://github.com/abhaymaniyar/crypto_notifications_service.git
 ```
 
 2. Create a dev environment file from the sample file
@@ -63,11 +63,7 @@ env variables file.
 
 ### Detailed API Spec with sample responses
 
-https://documenter.getpostman.com/view/3144528/2sA2xnxVD2
-
 ### Postman Collection
-
-https://api.postman.com/collections/3144528-69009c19-e07f-4d08-b5bc-3981e8ceeb36?access_key=PMAT-01HS4YCA9CSY9J19XF7PF8G6B2
 
 ### Built With
 
