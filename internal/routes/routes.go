@@ -1,6 +1,7 @@
 package routes
 
 import (
+	v1 "awesomeProject/internal/routes/v1"
 	"fmt"
 	"net/http"
 
@@ -13,5 +14,5 @@ func Init(router *httprouter.Router) {
 		_, _ = fmt.Fprint(w, "{ \"message\":\"Hello world!. I am dashboard service.\",\"success\":true,\"api_version\": 1 }")
 	})
 
-	//v1.RegisterRoutes(router)
+	v1.RegisterRoutes(router)
 }
