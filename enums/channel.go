@@ -10,3 +10,12 @@ var (
 	CALL     Channel = "CALL"
 	TELECALL Channel = "TELECALL"
 )
+
+func (c Channel) IsValid() bool {
+	switch c {
+	case EMAIL, PUSH, APP, SMS, CALL, TELECALL:
+		return true
+	}
+
+	return false
+}
