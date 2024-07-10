@@ -5,6 +5,7 @@ import (
 	"awesomeProject/internal/web"
 	"awesomeProject/repositories"
 	"encoding/json"
+	"fmt"
 	"github.com/google/uuid"
 	"net/http"
 	"strconv"
@@ -32,10 +33,12 @@ func (h *NotificationHandler) Create(r *web.Request) (*web.JSONResponse, web.Err
 		return nil, errorResponse(err)
 	}
 
+	fmt.Println(req)
 	err = h.service.Create(req)
 	if err != nil {
 		return nil, errorResponse(err)
 	}
+	fmt.Println(err)
 
 	return (*web.JSONResponse)(nil), nil
 }
@@ -100,7 +103,7 @@ func validateCreateNotificationRequest(r *http.Request) (*services.NotificationR
 
 	isValidType := request.Type.IsValid()
 	if !isValidType {
-		return nil, ErrInvalidCardType
+		return nil, ErrInvalidNotificationType
 	}
 
 	isValidCoin := request.Coin.IsValid()

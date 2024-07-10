@@ -2,7 +2,7 @@ package enums
 
 type Channel string
 
-var (
+const (
 	EMAIL    Channel = "EMAIL"
 	PUSH     Channel = "PUSH"
 	APP      Channel = "APP"

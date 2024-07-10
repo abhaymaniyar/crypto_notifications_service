@@ -2,7 +2,7 @@ package enums
 
 type Coin string
 
-var (
+const (
 	BTC Coin = "BTC"
 	ETH Coin = "ETH"
 	XRP Coin = "XRP"

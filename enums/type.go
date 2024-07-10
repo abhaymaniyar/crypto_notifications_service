@@ -2,7 +2,7 @@ package enums
 
 type Type string
 
-var (
+const (
 	HIGH_CHANGE Type = "HIGH_CHANGE"
 	ORDER       Type = "ORDER"
 )

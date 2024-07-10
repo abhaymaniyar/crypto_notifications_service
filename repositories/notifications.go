@@ -4,6 +4,7 @@ import (
 	"awesomeProject/internal/db"
 	"awesomeProject/internal/logger"
 	"awesomeProject/internal/model"
+	"fmt"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 )
@@ -29,6 +30,7 @@ func NewNotificationRepo() NotificationRepoI {
 }
 
 func (r *NotificationRepo) SaveNotification(notification model.Notification) error {
+	fmt.Println(notification)
 	err := r.DB.Create(notification).Error
 	if err != nil {
 		logger.E(nil, err, "Error while saving notification")
