@@ -62,8 +62,10 @@ This command will load environment variables of the specified env file and run t
 env variables file.
 
 ### Detailed API Spec with sample responses
+https://documenter.getpostman.com/view/3144528/2sA3e4993D
 
 ### Postman Collection
+https://api.postman.com/collections/3144528-15501ed9-be31-42b2-9a12-feb25b90dd19?access_key=PMAT-01J2EK3MHFJ4ST9QN4YDXWQGD7
 
 ### Built With
 
