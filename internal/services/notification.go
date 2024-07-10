@@ -10,10 +10,10 @@ import (
 )
 
 type NotificationRequest struct {
-	Type     enums.Type      `json:"type" binding:"required"`
-	Coin     enums.Coin      `json:"coin" binding:"required"`
-	Channels []enums.Channel `json:"channels" binding:"required"`
-	Data     interface{}     `json:"data" binding:"required"`
+	Type     enums.Type             `json:"type" binding:"required"`
+	Coin     enums.Coin             `json:"coin" binding:"required"`
+	Channels []enums.Channel        `json:"channels" binding:"required"`
+	Data     map[string]interface{} `json:"data" binding:"required"`
 }
 
 type NotificationServiceI interface {
